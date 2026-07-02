@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suffe Catering | Luxury Catering & Event Organization</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body
+
+{
+font-family:Arial,sans-serif;
+background:#f8f8f8;
+}
+
+
+
+/* HEADER */
+
+.header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 70px;
+
+background:white;
+
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+position:sticky;
+top:0;
+z-index:999;
+
+}
+
+.logo img{
+
+height:80px;
+
+}
+
+.menu{
+
+display:flex;
+gap:35px;
+
+}
+
+.menu a{
+
+text-decoration:none;
+
+color:#333;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.menu a:hover{
+
+color:#6B7D1E;
+
+}
+
+.book-btn{
+
+background:#B98A28;
+
+color:white;
+
+padding:14px 30px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.book-btn:hover{
+
+background:#6B7D1E;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.header{
+
+flex-direction:column;
+
+gap:25px;
+
+padding:20px;
+
+}
+
+.menu{
+
+flex-direction:column;
+
+align-items:center;
+
+gap:18px;
+
+}
+
+.book-btn{
+
+width:100%;
+text-align:center;
+
+}
+
+}
+/* HERO */
+
+.hero{
+
+height:90vh;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("images/hero/hero.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+}
+
+.hero-subtitle{
+
+color:#B98A28;
+
+font-size:22px;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+margin-bottom:20px;
+
+font-weight:bold;
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+color:white;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+}
+
+.hero-text{
+
+color:white;
+
+font-size:22px;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+background:#B98A28;
+
+color:white;
+
+padding:18px 40px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+background:#6B7D1E;
+
+}
+
+.hero-btn-outline{
+
+border:2px solid white;
+
+color:white;
+
+padding:18px 40px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.hero-btn-outline:hover{
+
+background:white;
+
+color:black;
+
+}
+/* ABOUT */
+
+.about{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:70px;
+
+padding:120px 10%;
+
+background:white;
+
+flex-wrap:wrap;
+
+}
+
+.about-image{
+
+flex:1;
+
+min-width:350px;
+
+}
+
+.about-image img{
+
+width:100%;
+
+border-radius:25px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.about-content{
+
+flex:1;
+
+min-width:350px;
+
+}
+
+.about-content h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.about-content h2{
+
+font-size:48px;
+
+margin-bottom:25px;
+
+color:#222;
+
+}
+
+.about-content p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#666;
+
+margin-bottom:30px;
+
+}
+
+.about-list{
+
+display:grid;
+
+gap:15px;
+
+font-size:18px;
+
+margin-bottom:40px;
+
+}
+
+.about-boxes{
+
+display:flex;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.box{
+
+background:#B98A28;
+
+color:white;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+min-width:150px;
+
+}
+
+.box h3{
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
+
+.box span{
+
+font-size:16px;
+
+}
+/* SERVICES */
+
+.services{
+
+padding:120px 10%;
+
+background:#f8f8f8;
+
+text-align:center;
+
+}
+
+.services h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.services h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.services-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:white;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.service-card h3{
+
+font-size:28px;
+
+margin-bottom:20px;
+
+color:#333;
+
+}
+
+.service-card p{
+
+font-size:17px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+/* WHY CHOOSE US */
+
+.why{
+
+padding:120px 10%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.why h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.why h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.why-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.why-card{
+
+background:#f8f8f8;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.icon{
+
+font-size:50px;
+
+margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+color:#333;
+
+}
+
+.why-card p{
+
+font-size:17px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+/* GALLERY */
+
+.gallery{
+
+padding:120px 10%;
+
+background:#f8f8f8;
+
+text-align:center;
+
+}
+
+.gallery h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.gallery h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.gallery-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
+}
+
+.gallery-container img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.gallery-container img:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+/* PACKAGES */
+
+.packages{
+
+padding:120px 10%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.packages h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.packages h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.packages-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.package-card{
+
+background:#f8f8f8;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.package-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.package-card h3{
+
+font-size:30px;
+
+margin-bottom:20px;
+
+color:#333;
+
+}
+
+.package-price{
+
+font-size:40px;
+
+color:#B98A28;
+
+font-weight:bold;
+
+margin-bottom:25px;
+
+}
+
+.package-card ul{
+
+list-style:none;
+
+padding:0;
+
+margin-bottom:30px;
+
+}
+
+.package-card li{
+
+padding:10px 0;
+
+color:#666;
+
+font-size:17px;
+
+}
+
+.package-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#B98A28;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.package-btn:hover{
+
+background:#6B7D1E;
+
+}
+/* REVIEWS */
+
+.reviews{
+
+padding:120px 10%;
+
+background:#f8f8f8;
+
+text-align:center;
+
+}
+
+.reviews h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.reviews h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.reviews-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.review-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.review-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.stars{
+
+font-size:24px;
+
+color:#f5b301;
+
+margin-bottom:20px;
+
+}
+
+.review-card p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#666;
+
+margin-bottom:25px;
+
+font-style:italic;
+
+}
+
+.review-card h3{
+
+font-size:22px;
+
+color:#333;
+
+}
+
+.review-card span{
+
+color:#B98A28;
+
+font-size:15px;
+
+}
+/* RESERVATION */
+
+.reservation{
+
+padding:120px 10%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.reservation h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.reservation h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.reservation-form{
+
+max-width:900px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:20px;
+
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea{
+
+width:100%;
+
+padding:18px;
+
+font-size:16px;
+
+border:1px solid #ddd;
+
+border-radius:12px;
+
+outline:none;
+
+}
+
+.reservation-form textarea{
+
+height:160px;
+
+resize:none;
+
+grid-column:1/-1;
+
+}
+
+.reservation-btn{
+
+grid-column:1/-1;
+
+padding:18px;
+
+background:#B98A28;
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.reservation-btn:hover{
+
+background:#6B7D1E;
+
+}
+/* CONTACT */
+
+.contact{
+
+padding:120px 10%;
+
+background:#f8f8f8;
+
+text-align:center;
+
+}
+
+.contact h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.contact h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.contact-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:40px;
+
+align-items:start;
+
+}
+
+.contact-info{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+text-align:left;
+
+}
+
+.contact-info h3{
+
+margin-bottom:30px;
+
+font-size:30px;
+
+color:#333;
+
+}
+
+.contact-info p{
+
+font-size:18px;
+
+margin-bottom:20px;
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+.contact-map iframe{
+
+width:100%;
+
+height:450px;
+
+border:none;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:70px;
+
+height:70px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:38px;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+transition:.3s;
+
+z-index:9999;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+background:#1EBE5D;
+
+}
+/* FOOTER */
+
+.footer{
+
+background:#222;
+
+color:white;
+
+padding:70px 10% 30px;
+
+}
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:40px;
+
+margin-bottom:40px;
+
+}
+
+.footer h3{
+
+color:#B98A28;
+
+margin-bottom:20px;
+
+font-size:24px;
+
+}
+
+.footer p,
+.footer a{
+
+color:#ddd;
+
+text-decoration:none;
+
+line-height:2;
+
+font-size:16px;
+
+}
+
+.footer a:hover{
+
+color:#B98A28;
+
+}
+
+.footer-bottom{
+
+text-align:center;
+
+padding-top:30px;
+
+border-top:1px solid rgba(255,255,255,.1);
+
+color:#aaa;
+
+font-size:15px;
+
+}
+/* LANGUAGE */
+
+.language-switcher{
+
+display:flex;
+
+gap:10px;
+
+align-items:center;
+
+}
+
+.language-switcher button{
+
+background:white;
+
+border:2px solid #B98A28;
+
+color:#B98A28;
+
+padding:8px 15px;
+
+border-radius:25px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.language-switcher button:hover{
+
+background:#B98A28;
+
+color:white;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="images/logo/suffe-logo.png" alt="Suffe Catering">
+
+</a>
+
+</div>
+
+<div class="menu">
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#packages">Packages</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+<div class="language-switcher">
+
+<button id="tr-btn">🇹🇷 TR</button>
+
+<button id="en-btn">🇬🇧 EN</button>
+
+</div>
+<a href="#" class="book-btn">
+
+BOOK NOW
+
+</a>
+
+</div>
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<p class="hero-subtitle" id="hero-subtitle">
+Luxury Catering & Event Organization
+</p>
+
+<h1 id="hero-title">
+Creating Unforgettable Events in Marmaris
+</h1>
+
+<p class="hero-text" id="hero-text">
+From elegant weddings and yacht parties to corporate events and private celebrations, Suffe Catering delivers exceptional food and unforgettable experiences with premium service.
+</p>
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn" id="book-btn">
+Book Now
+</a>
+<a href="#" class="hero-btn-outline" id="services-btn">
+Explore Services
+</a>
+</div>
+
+</div>
+
+
+</section>
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="about-image">
+
+<img src="images/about/about.jpg" alt="About Suffe Catering">
+
+</div>
+
+<div class="about-content">
+
+<h4>
+ABOUT SUFFE CATERING
+</h4>
+
+<h2>
+Luxury Catering & Event Organization in Marmaris
+</h2>
+
+<p>
+
+Suffe Catering provides premium catering and event organization services throughout Marmaris and surrounding areas. We specialize in weddings, funerals, corporate events, yacht parties, schools, villas, birthdays and private celebrations with exceptional quality and professional service.
+
+</p>
+
+<div class="about-list">
+
+<div>✔ Premium Catering Service</div>
+
+<div>✔ Professional Event Planning</div>
+
+<div>✔ Fresh Daily Ingredients</div>
+
+<div>✔ Experienced Catering Team</div>
+
+</div>
+
+<div class="about-boxes">
+
+<div class="box">
+
+<h3>500+</h3>
+
+<span>Events</span>
+
+</div>
+
+<div class="box">
+
+<h3>100%</h3>
+
+<span>Customer Satisfaction</span>
+
+</div>
+
+<div class="box">
+
+<h3>10+</h3>
+
+<span>Years Experience</span>
+
+</div>
+
+</div>
+
+</div>
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h4>OUR SERVICES</h4>
+
+<h2>Premium Catering & Event Services</h2>
+
+<div class="services-container">
+
+<div class="service-card">
+<h3>💍 Wedding Catering</h3>
+<p>Elegant catering services for unforgettable wedding celebrations.</p>
+</div>
+
+<div class="service-card">
+<h3>⚱️ Funeral Catering</h3>
+<p>Professional and respectful catering for funeral gatherings.</p>
+</div>
+
+<div class="service-card">
+<h3>🏢 Corporate Events</h3>
+<p>Business meetings, conferences and company events.</p>
+</div>
+
+<div class="service-card">
+<h3>🚤 Yacht Catering</h3>
+<p>Luxury catering services for yachts and private cruises.</p>
+</div>
+
+<div class="service-card">
+<h3>🎂 Birthday Parties</h3>
+<p>Delicious menus for birthdays and private celebrations.</p>
+</div>
+
+<div class="service-card">
+<h3>🏫 School Events</h3>
+<p>Catering for schools, graduations and educational events.</p>
+</div>
+
+<div class="service-card">
+<h3>🍸 Cocktail Events</h3>
+<p>Elegant cocktail receptions and exclusive parties.</p>
+</div>
+
+<div class="service-card">
+<h3>🏡 Private Villa Events</h3>
+<p>Premium catering for villas and private residences.</p>
+</div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why">
+
+<h4>WHY CHOOSE US</h4>
+
+<h2>Why Clients Trust Suffe Catering</h2>
+
+<div class="why-container">
+
+<div class="why-card">
+<div class="icon">⭐</div>
+<h3>Premium Quality</h3>
+<p>Fresh ingredients and carefully prepared menus for every event.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">👨‍🍳</div>
+<h3>Professional Team</h3>
+<p>Experienced chefs and friendly staff ready to serve your guests.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">🚚</div>
+<h3>On-Time Service</h3>
+<p>Always punctual and reliable catering service for every occasion.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">🎉</div>
+<h3>Custom Events</h3>
+<p>Every event is planned according to your wishes and requirements.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">💰</div>
+<h3>Affordable Prices</h3>
+<p>Luxury catering services with competitive and transparent pricing.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">❤️</div>
+<h3>Customer Satisfaction</h3>
+<p>We work hard to make every guest happy and every event unforgettable.</p>
+</div>
+
+</div>
+
+</section>
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+
+
+<h4>OUR GALLERY</h4>
+
+<h2>Memorable Events We Cater</h2>
+
+<div class="gallery-container">
+
+<img src="images/gallery/gallery1.jpg" alt="Wedding">
+
+<img src="images/gallery/gallery2.jpg" alt="Corporate">
+
+<img src="images/gallery/gallery3.jpg" alt="Yacht">
+
+<img src="images/gallery/gallery4.jpg" alt="Birthday">
+
+<img src="images/gallery/gallery5.jpg" alt="Cocktail">
+
+<img src="images/gallery/gallery6.jpg" alt="Funeral">
+
+</
+<!-- PACKAGES -->
+<section class="packages" id="packages">
+
+
+<h4>OUR PACKAGES</h4>
+
+<h2>Choose the Perfect Catering Package</h2>
+
+<div class="packages-container">
+
+<div class="package-card">
+
+<h3>🥉 Bronze</h3>
+
+<div class="package-price">
+Starting From $299
+</div>
+
+<ul>
+
+<li>✔ Up to 30 Guests</li>
+
+<li>✔ Buffet Menu</li>
+
+<li>✔ Professional Staff</li>
+
+<li>✔ Soft Drinks</li>
+
+</ul>
+
+<a href="#" class="package-btn">
+Book Package
+</a>
+
+</div>
+
+<div class="package-card">
+
+<h3>🥈 Silver</h3>
+
+<div class="package-price">
+Starting From $599
+</div>
+
+<ul>
+
+<li>✔ Up to 60 Guests</li>
+
+<li>✔ Premium Buffet</li>
+
+<li>✔ Professional Staff</li>
+
+<li>✔ Desserts & Drinks</li>
+
+</ul>
+
+<a href="#" class="package-btn">
+Book Package
+</a>
+
+</div>
+
+<div class="package-card">
+
+<h3>🥇 Gold</h3>
+
+<div class="package-price">
+Starting From $999
+</div>
+
+<ul>
+
+<li>✔ Up to 120 Guests</li>
+
+<li>✔ Luxury Buffet</li>
+
+<li>✔ Waiter Service</li>
+
+<li>✔ Premium Desserts</li>
+
+</ul>
+
+<a href="#" class="package-btn">
+Book Package
+</a>
+
+</div>
+
+<div class="package-card">
+
+<h3>💎 Platinum</h3>
+
+<div class="package-price">
+Custom Quote
+</div>
+
+<ul>
+
+<li>✔ Unlimited Guests</li>
+
+<li>✔ Luxury Catering</li>
+
+<li>✔ Full Event Organization</li>
+
+<li>✔ VIP Service</li>
+
+</ul>
+
+<a href="#" class="package-btn">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- CUSTOMER REVIEWS -->
+
+<section class="reviews">
+
+<h4>TESTIMONIALS</h4>
+
+<h2>What Our Clients Say</h2>
+
+<div class="reviews-container">
+
+<div class="review-card">
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<p>
+"Everything was perfect! The food, service and organization exceeded our expectations."
+</p>
+
+<h3>Sarah Johnson</h3>
+
+<span>Wedding Event</span>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<p>
+"We were very satisfied with the catering service. Professional team and delicious food."
+</p>
+
+<h3>Ahmet Yılmaz</h3>
+
+<span>Corporate Event</span>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<p>
+"Our yacht party was amazing thanks to Suffe Catering. Highly recommended!"
+</p>
+
+<h3>Emily Brown</h3>
+
+<span>Yacht Party</span>
+
+</div>
+
+</div>
+
+</section>
+<!-- RESERVATION -->
+
+<section class="reservation">
+
+<h4>BOOK YOUR EVENT</h4>
+
+<h2>Request a Catering Reservation</h2>
+
+<form class="reservation-form">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="date" required>
+
+<input type="text" placeholder="Event Location">
+
+<select required>
+
+<option value="">Select Event Type</option>
+
+<option>Wedding</option>
+
+<option>Funeral</option>
+
+<option>Corporate Event</option>
+
+<option>Birthday Party</option>
+
+<option>Yacht Catering</option>
+
+<option>School Event</option>
+
+<option>Cocktail Party</option>
+
+<option>Private Villa Event</option>
+
+</select>
+
+<input type="number" placeholder="Number of Guests">
+
+<textarea placeholder="Tell us about your event..."></textarea>
+
+<button type="submit" class="reservation-btn">
+Send Reservation Request
+</button>
+
+</form>
+
+</section>
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h4>CONTACT US</h4>
+
+<h2>Let's Plan Your Next Event</h2>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>Get In Touch</h3>
+
+<p>
+📍 Marmaris, Muğla, Türkiye
+</p>
+
+<p>
+📞 +90 5XX XXX XX XX
+</p>
+
+<p>
+📧 info@suffecatering.com
+</p>
+
+<p>
+🕒 Monday - Sunday<br>
+08:00 AM - 10:00 PM
+</p>
+
+<p>
+We provide professional catering and event organization services for weddings, funerals, yacht parties, corporate events, birthdays, schools and private celebrations.
+</p>
+
+</div>
+
+<div class="contact-map">
+
+<iframe
+src="https://www.google.com/maps?q=Marmaris,+Muğla&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+<!-- WHATSAPP BUTTON -->
+
+<a
+href="https://wa.me/905325695040"
+class="whatsapp"
+target="_blank">
+
+💬
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div>
+
+<h3>Suffe Catering</h3>
+
+<p>
+Luxury Catering & Event Organization in Marmaris.
+</p>
+
+<p>
+Making every event unforgettable with premium food and professional service.
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<p><a href="#">Home</a></p>
+<p><a href="#">About</a></p>
+<p><a href="#">Services</a></p>
+<p><a href="#">Gallery</a></p>
+<p><a href="#">Packages</a></p>
+<p><a href="#">Contact</a></p>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📍 Marmaris, Muğla, Türkiye</p>
+
+<p>📞 +90 532 569 50 40</p>
+
+<p>📧 info@suffecatering.com</p>
+
+<p>🕒 Every Day<br>08:00 - 22:00</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 Suffe Catering. All Rights Reserved.
+
+</div>
+
+</footer>
+</a>
+<script>
+
+const trBtn = document.getElementById("tr-btn");
+const enBtn = document.getElementById("en-btn");
+
+trBtn.addEventListener("click", function(){
+
+document.getElementById("hero-title").innerHTML =
+"Marmaris'te Unutulmaz Organizasyonlar";
+
+document.getElementById("hero-subtitle").innerHTML =
+"Lüks Catering ve Organizasyon";
+
+document.getElementById("hero-text").innerHTML =
+"Suffe Catering; düğün, cenaze, yat organizasyonları, kurumsal etkinlikler, doğum günleri ve özel davetler için profesyonel catering hizmeti sunar.";
+
+document.getElementById("book-btn").innerHTML =
+"Rezervasyon Yap";
+
+document.getElementById("services-btn").innerHTML =
+"Hizmetleri İncele";
+
+});
+
+enBtn.addEventListener("click", function(){
+
+document.getElementById("hero-title").innerHTML =
+"Creating Unforgettable Events in Marmaris";
+
+document.getElementById("hero-subtitle").innerHTML =
+"Luxury Catering & Event Organization";
+
+document.getElementById("hero-text").innerHTML =
+"From elegant weddings and yacht parties to corporate events and private celebrations, Suffe Catering delivers exceptional food and unforgettable experiences with premium service.";
+
+document.getElementById("book-btn").innerHTML =
+"Book Now";
+
+document.getElementById("services-btn").innerHTML =
+"Explore Services";
+
+});
+
+</script>
+</body>
+</html>
