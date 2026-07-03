@@ -49,7 +49,7 @@ z-index:999;
 
 .logo img{
 
-height:80px;
+height:90px;
 
 }
 
@@ -104,21 +104,57 @@ background:#6B7D1E;
 
 }
 
-/* MOBILE */
-
 @media(max-width:900px){
 
 .header{
-
-flex-direction:column;
-
-gap:25px;
 
 padding:20px;
 
 }
 
+.mobile-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+width:100%;
+
+}
+
+.header>.menu,
+.header>.language-switcher,
+.header>.book-btn{
+
+display:none;
+
+}
+
+.menu-toggle{
+
+display:block;
+
+font-size:36px;
+
+cursor:pointer;
+
+}
+
 .menu{
+
+display:none;
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+width:100%;
+
+background:white;
 
 flex-direction:column;
 
@@ -126,16 +162,41 @@ align-items:center;
 
 gap:18px;
 
+padding:20px 0;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+}
+
+.menu.active{
+
+display:flex;
+
+}
+
+.language-switcher{
+
+display:flex;
+
+justify-content:center;
+
+margin-top:20px;
+
 }
 
 .book-btn{
 
-width:100%;
+display:block;
+
+margin-top:20px;
+
 text-align:center;
 
 }
 
 }
+
+
 /* HERO */
 
 .hero{
@@ -1216,6 +1277,29 @@ background:#B98A28;
 color:white;
 
 }
+/* HAMBURGER MENU */
+
+.menu-toggle{
+
+display:none;
+
+font-size:35px;
+
+cursor:pointer;
+
+color:#333;
+
+}
+
+@media(max-width:900px){
+
+.menu-toggle{
+
+display:block;
+
+}
+
+}
 </style>
 
 </head>
@@ -1234,6 +1318,9 @@ color:white;
 
 </div>
 
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
 <div class="menu">
 
 <a href="#home">Home</a>
@@ -1256,11 +1343,13 @@ color:white;
 <button id="en-btn">🇬🇧 EN</button>
 
 </div>
-<a href="#" class="book-btn">
+<a href="#reservation" class="book-btn">
 
 BOOK NOW
 
 </a>
+
+
 
 </div>
 <!-- HERO -->
@@ -1281,10 +1370,10 @@ From elegant weddings and yacht parties to corporate events and private celebrat
 </p>
 <div class="hero-buttons">
 
-<a href="#" class="hero-btn" id="book-btn">
+<a href="#reservation" class="hero-btn" id="book-btn">
 Book Now
 </a>
-<a href="#" class="hero-btn-outline" id="services-btn">
+<a href="#services" class="hero-btn-outline" id="services-btn">
 Explore Services
 </a>
 </div>
@@ -1483,7 +1572,9 @@ Suffe Catering provides premium catering and event organization services through
 
 <img src="images/gallery/gallery6.jpg" alt="Funeral">
 
-</
+</div>
+
+</section>
 <!-- PACKAGES -->
 <section class="packages" id="packages">
 
@@ -1658,7 +1749,7 @@ Contact Us
 </section>
 <!-- RESERVATION -->
 
-<section class="reservation">
+<section class="reservation" id="reservation">
 
 <h4>BOOK YOUR EVENT</h4>
 
@@ -1727,13 +1818,9 @@ Send Reservation Request
 📍 Marmaris, Muğla, Türkiye
 </p>
 
-<p>
-📞 +90 5XX XXX XX XX
-</p>
+<p>📞 <a href="tel:+905325695040">+90 532 569 50 40</a></p>
 
-<p>
-📧 info@suffecatering.com
-</p>
+<p>📧 <a href="mailto:info@suffecatering.com">info@suffecatering.com</a></p>
 
 <p>
 🕒 Monday - Sunday<br>
@@ -1766,6 +1853,7 @@ class="whatsapp"
 target="_blank">
 
 💬
+</a>
 <!-- FOOTER -->
 
 <footer class="footer">
@@ -1790,13 +1878,12 @@ Making every event unforgettable with premium food and professional service.
 
 <h3>Quick Links</h3>
 
-<p><a href="#">Home</a></p>
-<p><a href="#">About</a></p>
-<p><a href="#">Services</a></p>
-<p><a href="#">Gallery</a></p>
-<p><a href="#">Packages</a></p>
-<p><a href="#">Contact</a></p>
-
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#packages">Packages</a>
+<a href="#contact">Contact</a>
 </div>
 
 <div>
@@ -1805,9 +1892,9 @@ Making every event unforgettable with premium food and professional service.
 
 <p>📍 Marmaris, Muğla, Türkiye</p>
 
-<p>📞 +90 532 569 50 40</p>
+<p>📞 <a href="tel:+905325695040">+90 532 569 50 40</a></p>
 
-<p>📧 info@suffecatering.com</p>
+<p>📧 <a href="mailto:info@suffecatering.com">info@suffecatering.com</a></p>
 
 <p>🕒 Every Day<br>08:00 - 22:00</p>
 
@@ -1822,7 +1909,6 @@ Making every event unforgettable with premium food and professional service.
 </div>
 
 </footer>
-</a>
 <script>
 
 const trBtn = document.getElementById("tr-btn");
@@ -1864,6 +1950,12 @@ document.getElementById("book-btn").innerHTML =
 document.getElementById("services-btn").innerHTML =
 "Explore Services";
 
+});
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.querySelector(".menu");
+
+menuToggle.addEventListener("click", function () {
+    menu.classList.toggle("active");
 });
 
 </script>
